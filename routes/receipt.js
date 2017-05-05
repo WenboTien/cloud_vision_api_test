@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
         console.log(docs);
         res.json({data: docs})
     });
-    res.send('respond with a resource');
+    // res.send('respond with a resource');
 });
 
 router.post('/', function(req, res, next) {

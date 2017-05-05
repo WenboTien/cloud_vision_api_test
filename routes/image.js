@@ -87,6 +87,8 @@ router.get('/', function(req, res, next) {
             var result = dataProcess(results.text);
             console.log(result);
             res.json(result);
+        }).catch(function (err) {
+            res.json({res:'false'});
         });
 
     // (data) => console.log(data[1].responses[0].fullTextAnnotation.text)
